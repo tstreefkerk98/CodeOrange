@@ -24,6 +24,22 @@
 </head>
 
 <body>
+    <div id="filterBar">
+        <div class="container">
+            <div class="well">
+                <div class="row">
+                    <div class="col-md-11">
+                        <ul id="filterList">
+                        </ul>
+                    </div>
+                    <div class="col-md-1">
+                        <div id="clearButton">Clear</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="container" id="assignments">
         <div id="assignment0">
             <div class="well">
@@ -40,19 +56,19 @@
                             </li>
                             <li>
                                 <div class="position"></div>
-                                <div class="framework7"></div>
-                                <div class="framework6"></div>
-                                <div class="framework5"></div>
-                                <div class="framework4"></div>
-                                <div class="framework3"></div>
-                                <div class="framework2"></div>
-                                <div class="framework1"></div>
+                                <div class="tools1" onclick="addFilterParameter(this)"></div>
+                                <div class="tools0" onclick="addFilterParameter(this)"></div>
+                                <div class="language2" onclick="addFilterParameter(this)"></div>
+                                <div class="language1" onclick="addFilterParameter(this)"></div>
+                                <div class="language0" onclick="addFilterParameter(this)"></div>
+                                <div class="role" onclick="addFilterParameter(this)"></div>
+                                <div class="level" onclick="addFilterParameter(this)"></div>
                             </li>
                             <li>
                                 <div class="postedAt"></div>
-                                <span>&#8226;</span>
+                                <span class="dot">&#8226;</span>
                                 <div class="contract"></div>
-                                <span>&#8226;</span>
+                                <span class="dot">&#8226;</span>
                                 <div class="location"></div>
                             </li>
                         </ul>
@@ -61,7 +77,4 @@
             </div>
         </div>
     </div>
-
-
-
 </body>

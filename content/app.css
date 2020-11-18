@@ -15,18 +15,70 @@ body {
     list-style-type: none;
 }
 
+/* Filter bar */
+#filterBar {
+    top: 0;
+    background-color: #5da4a6;
+    height: 100px;
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+    padding-top: 4.5%;
+}
+
+#clearButton {
+    font-size: 15px;
+    color: #5da4a6;
+    cursor: pointer;
+}
+
+#clearButton:hover {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+#filterList li {
+    list-style-type: none;
+    float: left;
+}
+
+.close {
+    color: white;
+    background-color: #5da4a6;
+    margin-left: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: white;
+    background-color: #2a3a39;
+}
+
+.filterButton {
+    color: #5da4a6;
+    background-color: #eef7f6;
+    font-weight: bold;
+    margin-right: 20px;
+    border-radius: 5px;
+    padding-top: 3px;
+    padding-left: 3px;
+    padding-bottom: 3px;
+}
+
 /* All row elements */
-.company, .new, .featured, .position, .postedAt, .contract, .location, .framework1, .framework2, .framework3, .framework4, .framework5, .framework6, .framework7 {
+.company, .new, .featured, .position, .postedAt, .contract, .location, .level, .role, .language0, .language1, .language2, .tools0, .tools1 {
     display: inline;   
 }
 
 /* Top row elements and frameworks */
-.company, .new, .featured, .framework1, .framework2, .framework3, .framework4, .framework5, .framework6, .framework7 {
+.company, .new, .featured, .level, .role, .language0, .language1, .language2, .tools0, .tools1 {
     padding-right: 5px;
 }
 
 /* New featured and frameworks */
-.new, .featured, .framework1, .framework2, .framework3, .framework4, .framework5, .framework6, .framework7 {
+.new, .featured, .level, .role, .language0, .language1, .language2, .tools0, .tools1 {
     margin-left: 10px;
     padding-left: 5px;
     border-radius: 5px;
@@ -55,11 +107,23 @@ body {
     font-size: 20px;
 }
 
-.framework1, .framework2, .framework3, .framework4, .framework5, .framework6, .framework7 {
+.position:hover {
+    color: #5da4a6;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.level, .role, .language0, .language1, .language2, .tools0, .tools1 {
     color: #5da4a6;
     background-color: #eef7f6;
     float: right;
     margin-left: 10px;
+}
+
+.level:hover, .role:hover, .language0:hover, .language1:hover, .language2:hover, .tools0:hover, .tools1:hover {
+    color: white;
+    background-color: #5da4a6;
+    cursor: pointer;
 }
 
 /* Bottom row elements */
@@ -68,18 +132,6 @@ body {
     color: gray;
 }
 
-span {
+.dot {
     color: gray;
 }
-
-/* ACTIONS */
-.position:hover {
-    color: #5da4a6;
-    font-weight: bold;
-}
-
-.framework1:hover, .framework2:hover, .framework3:hover, .framework4:hover, .framework5:hover, .framework6:hover, .framework7:hover {
-    color: white;
-    background-color: #5da4a6;
-}
-
